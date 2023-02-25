@@ -1,0 +1,10 @@
+[package]
+name = "packet_sniffer"
+version = "0.1.0"
+authors = ["k0pernicus <antonin.carette@gmail.com>"]
+
+# Need to run:
+# $ sudo setcap cap_net_admin,cap_net_raw=eip target/debug/sniffer
+[dependencies]
+argparse="*"
+"pcap"="*"
