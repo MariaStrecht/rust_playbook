@@ -1,6 +1,8 @@
 extern crate argparse;
 extern crate pcap;
 
+// Need to run:
+// $ sudo setcap cap_net_admin,cap_net_raw=eip target/debug/packetSniffer
 use argparse::{ArgumentParser, Store, StoreTrue};
 use pcap::{Capture, Device};
 
